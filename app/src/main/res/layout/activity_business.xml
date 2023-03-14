@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gl_main_ordersure"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:id="@+id/ordersure_widget_1"
+        android:layout_width = "fill_parent"
+        android:layout_height = "@dimen/_41sdp"
+        android:background = "#ffffff"
+        android:gravity = "left">
+
+        <RelativeLayout
+            android:id="@+id/ordersure_widget_2"
+            android:layout_width = "@dimen/_275sdp"
+            android:layout_height = "@dimen/_26sdp"
+            android:layout_marginTop = "@dimen/_7sdp"
+            android:layout_centerHorizontal = "true"
+            android:gravity = "left">
+
+            <ImageView
+                android:id="@+id/iv_title_back"
+                android:layout_width = "@dimen/_16sdp"
+                android:layout_height = "@dimen/_16sdp"
+                android:layout_marginTop = "@dimen/_6sdp"
+                android:padding = "@dimen/_0sdp"
+                android:src = "@drawable/arrowleftblack"
+                android:gravity = "left"/>
+
+            <TextView
+                android:id="@+id/ordersure_widget_5"
+                android:layout_width = "@dimen/_60sdp"
+                android:layout_height = "@dimen/_26sdp"
+                android:layout_centerHorizontal = "true"
+                android:gravity = "center"
+                android:textColor = "#060606"
+                android:textSize = "@dimen/_11sdp"
+                android:text="组织认证"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ordersure_widget_6"
+            android:layout_width = "@dimen/_300sdp"
+            android:layout_height = "@dimen/_1sdp"
+            android:layout_marginTop = "@dimen/_7sdp"
+            android:layout_below = "@+id/ordersure_widget_2"
+            android:padding = "@dimen/_0sdp"
+            android:background = "#dddddd"
+            android:gravity = "left"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/ordersure_widget_7"
+        android:layout_width = "fill_parent"
+        android:layout_height = "fill_parent"
+        android:layout_marginTop = "@dimen/_0sdp"
+        android:layout_below = "@+id/ordersure_widget_1"
+        android:padding = "@dimen/_0sdp"
+        android:background = "#f6f6f6"
+        android:gravity = "left"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:id="@+id/ordersure_widget_67"
+            android:layout_width = "fill_parent"
+            android:layout_height = "fill_parent"
+            android:background = "#f6f6f6"
+            android:gravity = "left">
+
+            <RelativeLayout
+                android:id="@+id/ordersure_widget_25"
+                android:layout_width = "fill_parent"
+                android:layout_height = "wrap_content"
+                android:background = "#ffffff"
+                android:gravity = "left">
+
+                <RelativeLayout
+                    android:id="@+id/ordersure_widget_9"
+                    android:layout_width = "@dimen/_277sdp"
+                    android:layout_height = "@dimen/_13sdp"
+                    android:layout_marginTop = "@dimen/_11sdp"
+                    android:layout_centerHorizontal = "true"
+                    android:gravity = "left">
+
+                    <EditText
+                        android:id="@+id/et_business_name"
+                        android:layout_width = "@dimen/_205sdp"
+                        android:layout_height = "@dimen/_13sdp"
+                        android:layout_toRightOf = "@+id/ordersure_widget_10"
+                        android:gravity = "center_vertical"
+                        android:textColor = "#2a2a2a"
+                        android:textSize = "@dimen/_10sdp"
+                        android:background = "@null"/>
+
+                    <TextView
+                        android:id="@+id/ordersure_widget_10"
+                        android:layout_width = "@dimen/_45sdp"
+                        android:layout_height = "@dimen/_13sdp"
+                        android:gravity = "center_vertical"
+                        android:textColor = "#2a2a2a"
+                        android:textSize = "@dimen/_10sdp"
+                        android:text="昵称："/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/ordersure_widget_12"
+                    android:layout_width = "fill_parent"
+                    android:layout_height = "@dimen/_1sdp"
+                    android:layout_marginTop = "@dimen/_11sdp"
+                    android:layout_below = "@+id/ordersure_widget_9"
+                    android:background = "#dddddd"
+                    android:gravity = "left"/>
+
+                <RelativeLayout
+                    android:id="@+id/ordersure_widget_13"
+                    android:layout_width = "@dimen/_277sdp"
+                    android:layout_height = "@dimen/_13sdp"
+                    android:layout_marginTop = "@dimen/_13sdp"
+                    android:layout_below = "@+id/ordersure_widget_12"
+                    android:layout_centerHorizontal = "true"
+                    android:gravity = "left">
+
+                    <EditText
+                        android:id="@+id/et_business_position"
+                        android:layout_width = "@dimen/_205sdp"
+                        android:layout_height = "@dimen/_13sdp"
+                        android:layout_toRightOf = "@+id/ordersure_widget_14"
+                        android:gravity = "center_vertical"
+                        android:textColor = "#2a2a2a"
+                        android:textSize = "@dimen/_10sdp"
+                        android:background = "@null"/>
+
+                    <TextView
+                        android:id="@+id/ordersure_widget_14"
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "@dimen/_13sdp"
+                        android:gravity = "center_vertical"
+                        android:textColor = "#2a2a2a"
+                        android:textSize = "@dimen/_10sdp"
+                        android:text="认证称号："/>
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="@dimen/_277sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop = "@dimen/_3sdp"
+                    android:layout_centerHorizontal = "true"
+                    android:gravity = "left"
+                    android:layout_below="@id/ordersure_widget_13"
+                    android:textColor="@color/gray_b7"
+                    android:text="使用企业全称或简称，如称号与企业名称不一致，（例如使用企业 旗下产品或应用软件等）需补充上传关联证明材料。"/>
+                <RelativeLayout
+                    android:id="@+id/ordersure_widget_15"
+                    android:layout_width = "fill_parent"
+                    android:layout_height = "@dimen/_1sdp"
+                    android:layout_marginTop = "@dimen/_11sdp"
+                    android:layout_below = "@+id/text1"
+                    android:background = "#dddddd"
+                    android:gravity = "left"/>
+
+                <RelativeLayout
+                    android:id="@+id/ordersure_widget_16"
+                    android:layout_width = "@dimen/_277sdp"
+                    android:layout_height = "@dimen/_13sdp"
+                    android:layout_marginTop = "@dimen/_13sdp"
+                    android:layout_below = "@+id/ordersure_widget_15"
+                    android:layout_centerHorizontal = "true"
+                    android:gravity = "left">
+
+                    <EditText
+                        android:layout_width = "@dimen/_205sdp"
+                        android:layout_height = "@dimen/_13sdp"
+                        android:layout_toRightOf = "@+id/ordersure_widget_17"
+                        android:gravity = "center_vertical"
+                        android:textColor = "#2a2a2a"
+                        android:textSize = "@dimen/_10sdp"
+                        android:background = "@null"/>
+
+                    <TextView
+                        android:id="@+id/ordersure_widget_17"
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "@dimen/_13sdp"
+                        android:gravity = "center_vertical"
+                        android:textColor = "#2a2a2a"
+                        android:textSize = "@dimen/_10sdp"
+                        android:text="称号后缀："/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/ordersure_widget_18"
+                    android:layout_width = "fill_parent"
+                    android:layout_height = "@dimen/_1sdp"
+                    android:layout_marginTop = "@dimen/_11sdp"
+                    android:layout_below = "@+id/ordersure_widget_16"
+                    android:background = "#dddddd"
+                    android:gravity = "left"/>
+
+                <RelativeLayout
+                    android:id="@+id/ordersure_widget_19"
+                    android:layout_width = "@dimen/_277sdp"
+                    android:layout_height = "@dimen/_13sdp"
+                    android:layout_marginTop = "@dimen/_13sdp"
+                    android:layout_below = "@+id/ordersure_widget_18"
+                    android:layout_centerHorizontal = "true"
+                    android:gravity = "left">
+
+                    <EditText
+                        android:layout_width = "@dimen/_205sdp"
+                        android:layout_height = "@dimen/_13sdp"
+                        android:layout_toRightOf = "@+id/ordersure_widget_20"
+                        android:gravity = "center_vertical"
+                        android:textColor = "#2a2a2a"
+                        android:textSize = "@dimen/_10sdp"
+                        android:background = "@null"/>
+
+                    <TextView
+                        android:id="@+id/ordersure_widget_20"
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "@dimen/_13sdp"
+                        android:gravity = "center_vertical"
+                        android:textColor = "#2a2a2a"
+                        android:textSize = "@dimen/_10sdp"
+                        android:text="运营者身份证号："/>
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="@dimen/_277sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop = "@dimen/_3sdp"
+                    android:layout_centerHorizontal = "true"
+                    android:gravity = "left"
+                    android:layout_below="@id/ordersure_widget_19"
+                    android:textColor="@color/gray_b7"
+                    android:text="身份证号应与实际运营者需和运营授权函上一致。"/>
+                <RelativeLayout
+                    android:id="@+id/ordersure_widget_21"
+                    android:layout_width = "fill_parent"
+                    android:layout_height = "@dimen/_1sdp"
+                    android:layout_marginTop = "@dimen/_11sdp"
+                    android:layout_below = "@+id/text2"
+                    android:background = "#dddddd"
+                    android:gravity = "left"/>
+
+                <RelativeLayout
+                    android:id="@+id/ordersure_widget_22"
+                    android:layout_width = "@dimen/_277sdp"
+                    android:layout_height = "@dimen/_13sdp"
+                    android:layout_marginTop = "@dimen/_13sdp"
+                    android:layout_below = "@+id/ordersure_widget_21"
+                    android:layout_centerHorizontal = "true"
+                    android:gravity = "left">
+
+                    <EditText
+                        android:layout_width = "@dimen/_205sdp"
+                        android:layout_height = "@dimen/_13sdp"
+                        android:layout_toRightOf = "@+id/ordersure_widget_23"
+                        android:gravity = "center_vertical"
+                        android:textColor = "#2a2a2a"
+                        android:textSize = "@dimen/_10sdp"
+                        android:background = "@null"/>
+
+                    <TextView
+                        android:id="@+id/ordersure_widget_23"
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "@dimen/_13sdp"
+                        android:gravity = "center_vertical"
+                        android:textColor = "#2a2a2a"
+                        android:textSize = "@dimen/_10sdp"
+                        android:text="运营者手机号："/>
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="@dimen/_277sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop = "@dimen/_3sdp"
+                    android:layout_centerHorizontal = "true"
+                    android:gravity = "left"
+                    android:layout_below="@id/ordersure_widget_22"
+                    android:textColor="@color/gray_b7"
+                    android:text="手机号用于接收验证码，建议使用有效手机号。"/>
+                <RelativeLayout
+                    android:id="@+id/ordersure_widget_24"
+                    android:layout_width = "fill_parent"
+                    android:layout_height = "@dimen/_1sdp"
+                    android:layout_marginTop = "@dimen/_11sdp"
+                    android:layout_below = "@+id/text3"
+                    android:background = "#dddddd"
+                    android:gravity = "left"/>
+
+                <RelativeLayout
+                    android:id="@+id/ordersure_widget_26"
+                    android:layout_width = "@dimen/_277sdp"
+                    android:layout_height = "@dimen/_13sdp"
+                    android:layout_marginTop = "@dimen/_13sdp"
+                    android:layout_below = "@+id/ordersure_widget_24"
+                    android:layout_centerHorizontal = "true"
+                    android:gravity = "left">
+
+                    <EditText
+                        android:layout_width = "@dimen/_205sdp"
+                        android:layout_height = "@dimen/_13sdp"
+                        android:layout_toRightOf = "@+id/ordersure_widget_27"
+                        android:gravity = "center_vertical"
+                        android:textColor = "#2a2a2a"
+                        android:textSize = "@dimen/_10sdp"
+                        android:background = "@null"/>
+
+                    <TextView
+                        android:id="@+id/ordersure_widget_27"
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "@dimen/_13sdp"
+                        android:gravity = "center_vertical"
+                        android:textColor = "#2a2a2a"
+                        android:textSize = "@dimen/_10sdp"
+                        android:text="联系邮箱："/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/ordersure_widget_28"
+                    android:layout_width = "fill_parent"
+                    android:layout_height = "@dimen/_1sdp"
+                    android:layout_marginTop = "@dimen/_11sdp"
+                    android:layout_below = "@+id/ordersure_widget_26"
+                    android:background = "#dddddd"
+                    android:gravity = "left"/>
+
+                <RelativeLayout
+                    android:id="@+id/ordersure_widget_29"
+                    android:layout_width = "@dimen/_277sdp"
+                    android:layout_height = "wrap_content"
+                    android:layout_marginTop = "@dimen/_13sdp"
+                    android:layout_below = "@+id/ordersure_widget_28"
+                    android:layout_centerHorizontal = "true"
+                    android:gravity = "left">
+
+                    <ImageView
+                        android:id="@+id/business_add1"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_below = "@+id/ordersure_widget_30"
+                        android:src="@drawable/renzheng_add"/>
+                    <ImageView
+                        android:id="@+id/business_add11"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_toRightOf="@+id/business_add1"
+                        android:layout_below = "@+id/ordersure_widget_30"/>
+                    <ImageView
+                        android:id="@+id/business_add12"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_toRightOf="@+id/business_add11"
+                        android:layout_below = "@+id/ordersure_widget_30"/>
+                    <ImageView
+                        android:id="@+id/business_add13"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_toRightOf="@+id/business_add12"
+                        android:layout_below = "@+id/ordersure_widget_30"/>
+                    <ImageView
+                        android:id="@+id/business_add14"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_toRightOf="@+id/business_add13"
+                        android:layout_below = "@+id/ordersure_widget_30"/>
+
+                    <TextView
+                        android:id="@+id/ordersure_widget_30"
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "@dimen/_13sdp"
+                        android:gravity = "center_vertical"
+                        android:textColor = "#2a2a2a"
+                        android:textSize = "@dimen/_10sdp"
+                        android:text="事业单位证明/营业执照："/>
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/text4"
+                    android:layout_width="@dimen/_277sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop = "@dimen/_3sdp"
+                    android:layout_centerHorizontal = "true"
+                    android:gravity = "left"
+                    android:layout_below="@id/ordersure_widget_29"
+                    android:textColor="@color/gray_b7"
+                    android:text="每张小于2M，支持 JPG/PNG等格式，最多上传5张图片"/>
+                <TextView
+                    android:id="@+id/text5"
+                    android:layout_width="@dimen/_277sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop = "@dimen/_3sdp"
+                    android:layout_centerHorizontal = "true"
+                    android:gravity = "left"
+                    android:layout_below="@id/text4"
+                    android:textColor="#A8FF5454"
+                    android:text="上传资料要求：请上传最新版三证合一高清彩色版企业营业执照，或加盖红色企业公章的复印件（非电子
+公章），请确保营业执照完整清晰，便于识别。"/>
+                <RelativeLayout
+                    android:id="@+id/ordersure_widget_31"
+                    android:layout_width = "fill_parent"
+                    android:layout_height = "@dimen/_1sdp"
+                    android:layout_marginTop = "@dimen/_11sdp"
+                    android:layout_below = "@+id/text5"
+                    android:background = "#dddddd"
+                    android:gravity = "left"/>
+
+                <RelativeLayout
+                    android:id="@+id/ordersure_widget_32"
+                    android:layout_width = "@dimen/_277sdp"
+                    android:layout_height = "@dimen/_13sdp"
+                    android:layout_marginTop = "@dimen/_13sdp"
+                    android:layout_below = "@+id/ordersure_widget_31"
+                    android:layout_centerHorizontal = "true"
+                    android:gravity = "left">
+
+                    <EditText
+                        android:layout_width = "@dimen/_205sdp"
+                        android:layout_height = "@dimen/_13sdp"
+                        android:layout_toRightOf = "@+id/ordersure_widget_33"
+                        android:gravity = "center_vertical"
+                        android:textColor = "#2a2a2a"
+                        android:textSize = "@dimen/_10sdp"
+                        android:background = "@null"/>
+
+                    <TextView
+                        android:id="@+id/ordersure_widget_33"
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "@dimen/_13sdp"
+                        android:gravity = "center_vertical"
+                        android:textColor = "#2a2a2a"
+                        android:textSize = "@dimen/_10sdp"
+                        android:text="认证统一信用代码："/>
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/text6"
+                    android:layout_width="@dimen/_277sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop = "@dimen/_3sdp"
+                    android:layout_centerHorizontal = "true"
+                    android:gravity = "left"
+                    android:layout_below="@id/ordersure_widget_32"
+                    android:textColor="@color/gray_b7"
+                    android:text="非大陆地区企业替代材料"/>
+                <RelativeLayout
+                    android:id="@+id/ordersure_widget_34"
+                    android:layout_width = "fill_parent"
+                    android:layout_height = "@dimen/_1sdp"
+                    android:layout_marginTop = "@dimen/_11sdp"
+                    android:layout_below = "@+id/text6"
+                    android:background = "#dddddd"
+                    android:gravity = "left"/>
+
+                <RelativeLayout
+                    android:id="@+id/ordersure_widget_35"
+                    android:layout_width = "@dimen/_277sdp"
+                    android:layout_height = "@dimen/_13sdp"
+                    android:layout_marginTop = "@dimen/_13sdp"
+                    android:layout_below = "@+id/ordersure_widget_34"
+                    android:layout_centerHorizontal = "true"
+                    android:gravity = "left">
+
+                    <EditText
+                        android:layout_width = "@dimen/_205sdp"
+                        android:layout_height = "@dimen/_13sdp"
+                        android:layout_toRightOf = "@+id/ordersure_widget_36"
+                        android:gravity = "center_vertical"
+                        android:textColor = "#2a2a2a"
+                        android:textSize = "@dimen/_10sdp"
+                        android:background = "@null"/>
+
+                    <TextView
+                        android:id="@+id/ordersure_widget_36"
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "@dimen/_13sdp"
+                        android:gravity = "center_vertical"
+                        android:textColor = "#2a2a2a"
+                        android:textSize = "@dimen/_10sdp"
+                        android:text="企业全称："/>
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/text7"
+                    android:layout_width="@dimen/_277sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop = "@dimen/_3sdp"
+                    android:layout_centerHorizontal = "true"
+                    android:gravity = "left"
+                    android:layout_below="@id/ordersure_widget_35"
+                    android:textColor="@color/gray_b7"
+                    android:text="企业名称需与营业执照上的一致"/>
+                <RelativeLayout
+                    android:id="@+id/ordersure_widget_37"
+                    android:layout_width = "fill_parent"
+                    android:layout_height = "@dimen/_1sdp"
+                    android:layout_marginTop = "@dimen/_11sdp"
+                    android:layout_below = "@+id/text7"
+                    android:background = "#dddddd"
+                    android:gravity = "left"/>
+
+                <RelativeLayout
+                    android:id="@+id/ordersure_widget_38"
+                    android:layout_width = "@dimen/_277sdp"
+                    android:layout_height = "wrap_content"
+                    android:layout_marginTop = "@dimen/_13sdp"
+                    android:layout_below = "@+id/ordersure_widget_37"
+                    android:layout_centerHorizontal = "true"
+                    android:gravity = "left">
+                    <Spinner
+                        android:id="@+id/gongsi_spinner"
+                        android:entries="@array/gongsi"
+                        android:layout_toRightOf = "@+id/ordersure_widget_39"
+                        android:gravity = "center_vertical"
+                        android:textColor = "#2a2a2a"
+                        android:textSize = "@dimen/_10sdp"
+                        android:layout_width = "@dimen/_80sdp"
+                        android:layout_height = "@dimen/_25sdp" />
+
+                    <TextView
+                        android:id="@+id/ordersure_widget_39"
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "match_parent"
+                        android:layout_centerInParent="true"
+                        android:textColor = "#2a2a2a"
+                        android:textSize = "@dimen/_10sdp"
+                        android:text="企业分类："/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/ordersure_widget_40"
+                    android:layout_width = "fill_parent"
+                    android:layout_height = "@dimen/_1sdp"
+                    android:layout_marginTop = "@dimen/_11sdp"
+                    android:layout_below = "@+id/ordersure_widget_38"
+                    android:background = "#dddddd"
+                    android:gravity = "left"/>
+
+                <RelativeLayout
+                    android:id="@+id/ordersure_widget_41"
+                    android:layout_width = "@dimen/_277sdp"
+                    android:layout_height = "wrap_content"
+                    android:layout_marginTop = "@dimen/_13sdp"
+                    android:layout_below = "@+id/ordersure_widget_40"
+                    android:layout_centerHorizontal = "true"
+                    android:gravity = "left">
+
+                    <ImageView
+                        android:id="@+id/business_add2"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_below = "@+id/ordersure_widget_42"
+                        android:src="@drawable/renzheng_add"/>
+                    <ImageView
+                        android:id="@+id/business_add21"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_toRightOf="@+id/business_add2"
+                        android:layout_below = "@+id/ordersure_widget_42"/>
+                    <ImageView
+                        android:id="@+id/business_add22"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_toRightOf="@+id/business_add21"
+                        android:layout_below = "@+id/ordersure_widget_42"/>
+                    <ImageView
+                        android:id="@+id/business_add23"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_toRightOf="@+id/business_add22"
+                        android:layout_below = "@+id/ordersure_widget_42"/>
+
+                    <ImageView
+                        android:id="@+id/business_add24"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_toRightOf="@+id/business_add23"
+                        android:layout_below = "@+id/ordersure_widget_42"/>
+
+                    <TextView
+                        android:id="@+id/ordersure_widget_42"
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "@dimen/_13sdp"
+                        android:gravity = "center_vertical"
+                        android:textColor = "#2a2a2a"
+                        android:textSize = "@dimen/_10sdp"
+                        android:text="运营授权确认函："/>
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/text8"
+                    android:layout_width="@dimen/_277sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop = "@dimen/_3sdp"
+                    android:layout_centerHorizontal = "true"
+                    android:gravity = "left"
+                    android:layout_below="@id/ordersure_widget_41"
+                    android:textColor="@color/gray_b7"
+                    android:text="每张小于2M，支持 JPG/PNG等格式，最多上传5张图片"/>
+                <TextView
+                    android:id="@+id/text9"
+                    android:layout_width="@dimen/_277sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop = "@dimen/_3sdp"
+                    android:layout_centerHorizontal = "true"
+                    android:gravity = "left"
+                    android:layout_below="@id/text8"
+                    android:textColor="#A8FF5454"
+                    android:text="请下载官方模板 《机构认证申请公函》,并加盖企业公章（合同章，财务章无效）和运营人手写签名后扫描"/>
+                <RelativeLayout
+                    android:id="@+id/ordersure_widget_43"
+                    android:layout_width = "fill_parent"
+                    android:layout_height = "@dimen/_1sdp"
+                    android:layout_marginTop = "@dimen/_11sdp"
+                    android:layout_below = "@+id/text9"
+                    android:background = "#dddddd"
+                    android:gravity = "left"/>
+
+                <RelativeLayout
+                    android:id="@+id/ordersure_widget_44"
+                    android:layout_width = "@dimen/_277sdp"
+                    android:layout_height = "wrap_content"
+                    android:layout_marginTop = "@dimen/_13sdp"
+                    android:layout_below = "@+id/ordersure_widget_43"
+                    android:layout_centerHorizontal = "true"
+                    android:gravity = "left">
+
+                    <ImageView
+                        android:id="@+id/business_add3"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_below="@+id/ordersure_widget_45"
+                        android:src="@drawable/renzheng_add"/>
+                    <ImageView
+                        android:id="@+id/business_add31"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_toRightOf="@+id/business_add3"
+                        android:layout_below = "@+id/ordersure_widget_45"/>
+                    <ImageView
+                        android:id="@+id/business_add32"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_toRightOf="@+id/business_add31"
+                        android:layout_below = "@+id/ordersure_widget_45"/>
+                    <ImageView
+                        android:id="@+id/business_add33"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_toRightOf="@+id/business_add32"
+                        android:layout_below = "@+id/ordersure_widget_45"/>
+
+                    <ImageView
+                        android:id="@+id/business_add34"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_toRightOf="@+id/business_add33"
+                        android:layout_below = "@+id/ordersure_widget_45"/>
+
+                    <TextView
+                        android:id="@+id/ordersure_widget_45"
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "@dimen/_13sdp"
+                        android:gravity = "center_vertical"
+                        android:textColor = "#2a2a2a"
+                        android:textSize = "@dimen/_10sdp"
+                        android:text="补充文件："/>
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/text10"
+                    android:layout_width="@dimen/_277sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop = "@dimen/_3sdp"
+                    android:layout_centerHorizontal = "true"
+                    android:gravity = "left"
+                    android:layout_below="@id/ordersure_widget_44"
+                    android:textColor="@color/gray_b7"
+                    android:text="每张小于2M，支持 JPG/PNG等格式，最多上传5张图片"/>
+                <TextView
+                    android:id="@+id/text11"
+                    android:layout_width="@dimen/_277sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop = "@dimen/_3sdp"
+                    android:layout_centerHorizontal = "true"
+                    android:gravity = "left"
+                    android:layout_below="@id/text10"
+                    android:textColor="#A8FF5454"
+                    android:text="注意事项：昵称、认证称号和机构名称需要保持一致（昵称为机构名全称或简称，十字以内），如需使用非全称或简称作为昵称，
+请在补充文件中提交昵称与机构的关联证明文件（补充材料需显示认证昵称）否则将会认证失败。"/>
+                <RelativeLayout
+                    android:id="@+id/ordersure_widget_46"
+                    android:layout_width = "fill_parent"
+                    android:layout_height = "@dimen/_1sdp"
+                    android:layout_marginTop = "@dimen/_11sdp"
+                    android:layout_below = "@+id/text11"
+                    android:background = "#dddddd"
+                    android:gravity = "left"/>
+
+                <Button
+                    android:id="@+id/bt_be_business"
+                    android:layout_width = "@dimen/_276sdp"
+                    android:layout_height = "@dimen/_30sdp"
+                    android:layout_marginTop = "@dimen/_15sdp"
+                    android:layout_below="@+id/ordersure_widget_46"
+                    android:layout_centerHorizontal = "true"
+                    android:background="@drawable/shape_green_button"
+                    android:text="提交"
+                    android:textColor="#ffffff"
+                    android:gravity = "center"
+                    android:textSize = "@dimen/_10sdp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:id="@+id/item">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="21dp"
+        android:paddingTop="13dp"
+        android:paddingRight="21dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_header"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:src="@drawable/me_touxiang" />
+                <TextView
+                    android:id="@+id/shenbao_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="小河"
+                    android:layout_marginLeft="11dp"
+                    android:textStyle="bold"
+                    android:textColor="#242424"
+                    android:textSize="14sp" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/shenbao_text"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_3f"
+            android:textSize="18sp"
+            android:text="林参步写转手走收近人西组身然就实认。识细话义意少始克报县易则更。类已极会公根同始眼少酸改局月整件。系圆所九温高口手住族造传平之。"/>
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/gray_8d"
+                    android:text="用户评分:"/>
+
+                <TextView
+                    android:id="@+id/shenbao_star"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/gray_8d"
+                    android:text="5星"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/gray_8d"
+                    android:text="用户承接时间："/>
+
+                    <TextView
+                        android:id="@+id/shenbao_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="@color/gray_8d"
+                        android:text="2014-08-30 13:38"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/gray_8d"
+                    android:text="用户完成时间："/>
+
+                <TextView
+                    android:id="@+id/shenbao_last"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/gray_8d"
+                    android:text="1111"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:background="#f5f5f4" />
+</LinearLayout>

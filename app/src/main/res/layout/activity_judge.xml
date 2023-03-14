@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.PingjiaActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <ImageView
+            android:id="@+id/iv_title_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/arrowleftblack"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="项目详情"
+            android:layout_centerInParent="true"
+            android:textSize="30sp"
+            android:textColor="@color/title_gray"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bottom_tv_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_login"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="评价："
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:gravity="start"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:hint="请从多个角度评价该项目，可以帮助更多的志愿者"
+            android:layout_height="200dp"
+            android:background="@null"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_login"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="星级："
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <com.hedgehog.ratingbar.RatingBar
+            android:id="@+id/set_starbar"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:halfstart="false"
+            app:starCount="5"
+            app:starEmpty="@drawable/star_empty"
+            app:starFill="@drawable/star_full"
+            app:starImageHeight="40dp"
+            app:starImagePadding="5dp"
+            app:starImageWidth="40dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/send_judge"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/shape_orange_button"
+        android:text="发布评价"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textSize="23sp"/>
+</LinearLayout>

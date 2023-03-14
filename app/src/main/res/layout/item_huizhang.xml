@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shape_circle_corner_white">
+
+    <ImageView
+        android:id="@+id/iv_huizhang"
+        android:layout_width="200dp"
+        android:layout_height="180dp"
+        android:src="@drawable/linshi"/>
+    <TextView
+        android:id="@+id/tv_huizhang_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="志愿小兵"
+        android:textSize="25sp"
+        android:layout_gravity="center_horizontal"/>
+   </LinearLayout>
+
+</LinearLayout>

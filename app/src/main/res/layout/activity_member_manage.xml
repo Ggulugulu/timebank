@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MemberManageActivity">
+
+    <RelativeLayout
+        android:id="@+id/a_1"
+        android:layout_width = "fill_parent"
+        android:layout_height = "@dimen/_41sdp"
+        android:padding = "@dimen/_0sdp"
+        android:background = "#ffffff"
+        android:gravity = "left">
+
+        <RelativeLayout
+            android:id="@+id/accountmanagement_widget_3"
+            android:layout_width = "@dimen/_275sdp"
+            android:layout_height = "@dimen/_28sdp"
+            android:layout_marginTop = "@dimen/_6sdp"
+            android:layout_centerHorizontal = "true">
+
+            <ImageView
+                android:id="@+id/iv_title_back"
+                android:layout_width = "@dimen/_16sdp"
+                android:layout_height = "@dimen/_16sdp"
+                android:layout_marginLeft = "@dimen/_0sdp"
+                android:padding = "@dimen/_0sdp"
+                android:src = "@drawable/arrowleftblack"
+                android:layout_centerVertical = "true"
+                android:layout_alignParentLeft = "true"
+                android:gravity = "left"/>
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width = "wrap_content"
+                android:layout_height = "@dimen/_28sdp"
+                android:layout_centerHorizontal = "true"
+                android:gravity = "center"
+                android:textColor = "#0b0f0b"
+                android:textSize = "@dimen/_11sdp"
+                android:text="家庭成员管理"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width = "fill_parent"
+            android:layout_height = "@dimen/_1sdp"
+            android:layout_marginTop = "@dimen/_6sdp"
+            android:layout_below = "@+id/accountmanagement_widget_3"
+            android:background = "#e4e5e4"
+            android:gravity = "left"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rel_address"
+        android:layout_below="@+id/a_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/bt_address_add"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@drawable/shape_orange_button"
+        android:text="添加成员"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

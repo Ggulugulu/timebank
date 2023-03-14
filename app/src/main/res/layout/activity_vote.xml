@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/ordersure_widget_1"
+        android:layout_width = "fill_parent"
+        android:layout_height = "@dimen/_41sdp"
+        android:background = "#ffffff"
+        android:gravity = "left">
+
+        <RelativeLayout
+            android:id="@+id/ordersure_widget_2"
+            android:layout_width = "@dimen/_275sdp"
+            android:layout_height = "@dimen/_26sdp"
+            android:layout_marginTop = "@dimen/_7sdp"
+            android:layout_centerHorizontal = "true"
+            android:gravity = "left">
+
+            <ImageView
+                android:id="@+id/iv_title_back"
+                android:layout_width = "@dimen/_16sdp"
+                android:layout_height = "@dimen/_16sdp"
+                android:layout_marginLeft = "@dimen/_0sdp"
+                android:layout_marginTop = "@dimen/_6sdp"
+                android:padding = "@dimen/_0sdp"
+                android:src = "@drawable/arrowleftblack"
+                android:gravity = "left"/>
+
+            <TextView
+                android:id="@+id/ordersure_widget_5"
+                android:layout_width = "@dimen/_90sdp"
+                android:layout_height = "@dimen/_26sdp"
+                android:layout_centerHorizontal = "true"
+                android:gravity = "center"
+                android:textColor = "#060606"
+                android:textSize = "@dimen/_11sdp"
+                android:text="审核人候选人投票"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ordersure_widget_6"
+            android:layout_width = "@dimen/_300sdp"
+            android:layout_height = "@dimen/_1sdp"
+            android:layout_marginTop = "@dimen/_7sdp"
+            android:layout_below = "@+id/ordersure_widget_2"
+            android:background = "#dddddd"
+            android:gravity = "left"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#8d778899"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/shape_search_box"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="13dp"
+            android:src="@drawable/search" />
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="11dp"
+            android:background="@null"
+            android:hint="搜索你想找的审核候选人"
+            android:textColor="#000000"
+            android:textColorHint="#737373"
+            android:textSize="15sp" />
+    </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/checkman_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

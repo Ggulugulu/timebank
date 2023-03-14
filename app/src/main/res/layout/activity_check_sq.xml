@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CheckSqActivity">
+    <RelativeLayout
+        android:id="@+id/chech_sq_1"
+        android:layout_width = "fill_parent"
+        android:layout_height = "@dimen/_41sdp"
+        android:background = "#ffffff"
+        android:gravity = "left">
+
+        <RelativeLayout
+            android:id="@+id/ordersure_widget_2"
+            android:layout_width = "@dimen/_275sdp"
+            android:layout_height = "@dimen/_26sdp"
+            android:layout_marginTop = "@dimen/_7sdp"
+            android:layout_centerHorizontal = "true"
+            android:gravity = "left">
+
+            <ImageView
+                android:id="@+id/iv_title_back"
+                android:layout_width = "@dimen/_16sdp"
+                android:layout_height = "@dimen/_16sdp"
+                android:layout_marginTop = "@dimen/_6sdp"
+                android:padding = "@dimen/_0sdp"
+                android:src = "@drawable/arrowleftblack"
+                android:gravity = "left"/>
+
+            <TextView
+                android:layout_width = "@dimen/_60sdp"
+                android:layout_height = "@dimen/_26sdp"
+                android:layout_centerHorizontal = "true"
+                android:gravity = "center"
+                android:textColor = "#060606"
+                android:textSize = "@dimen/_11sdp"
+                android:text="申请审核人"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ordersure_widget_6"
+            android:layout_width = "@dimen/_300sdp"
+            android:layout_height = "@dimen/_1sdp"
+            android:layout_marginTop = "@dimen/_7sdp"
+            android:layout_below = "@+id/ordersure_widget_2"
+            android:padding = "@dimen/_0sdp"
+            android:background = "#dddddd"
+            android:gravity = "left"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/chech_sq_2"
+        android:layout_width = "fill_parent"
+        android:layout_height = "fill_parent"
+        android:layout_below="@+id/chech_sq_1"
+        android:background = "#f6f6f6"
+        android:gravity = "left">
+
+        <RelativeLayout
+            android:id="@+id/chech_sq_3"
+            android:layout_width = "fill_parent"
+            android:layout_height = "wrap_content"
+            android:background = "#ffffff"
+            android:gravity = "left">
+
+            <RelativeLayout
+                android:id="@+id/chech_sq_4"
+                android:layout_width = "@dimen/_277sdp"
+                android:layout_height = "@dimen/_13sdp"
+                android:layout_marginTop = "@dimen/_11sdp"
+                android:layout_centerHorizontal = "true"
+                android:gravity = "left">
+
+                <TextView
+                    android:id="@+id/text_4"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "@dimen/_13sdp"
+                    android:gravity = "center_vertical"
+                    android:textColor = "#2a2a2a"
+                    android:textSize = "@dimen/_10sdp"
+                    android:text="申请理由："/>
+
+                <EditText
+                    android:id="@+id/et_business_name"
+                    android:layout_width = "@dimen/_205sdp"
+                    android:layout_height = "@dimen/_13sdp"
+                    android:layout_toRightOf = "@+id/text_4"
+                    android:gravity = "center_vertical"
+                    android:textColor = "#2a2a2a"
+                    android:textSize = "@dimen/_10sdp"
+                    android:background = "@null"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/line_1"
+                android:layout_width = "fill_parent"
+                android:layout_height = "@dimen/_1sdp"
+                android:layout_marginTop = "@dimen/_11sdp"
+                android:layout_below = "@+id/chech_sq_4"
+                android:background = "#dddddd"
+                android:gravity = "left"/>
+
+            <RelativeLayout
+                android:id="@+id/chech_sq_5"
+                android:layout_width = "@dimen/_277sdp"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop = "@dimen/_13sdp"
+                android:layout_below = "@+id/line_1"
+                android:layout_centerHorizontal = "true"
+                android:gravity = "left">
+
+                <EditText
+                    android:layout_width = "match_parent"
+                    android:layout_height = "100dp"
+                    android:layout_toRightOf = "@+id/text_5"
+                    android:gravity="top"
+                    android:textColor = "#2a2a2a"
+                    android:textSize = "@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/text_5"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "@dimen/_13sdp"
+                    android:gravity = "center_vertical"
+                    android:textColor = "#2a2a2a"
+                    android:textSize = "@dimen/_10sdp"
+                    android:text="竞争宣言："/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/line_2"
+                android:layout_width = "fill_parent"
+                android:layout_height = "@dimen/_1sdp"
+                android:layout_marginTop = "@dimen/_11sdp"
+                android:layout_below = "@+id/chech_sq_5"
+                android:background = "#dddddd"
+                android:gravity = "left"/>
+
+            <RelativeLayout
+                android:id="@+id/chech_sq_6"
+                android:layout_width = "@dimen/_277sdp"
+                android:layout_height = "@dimen/_13sdp"
+                android:layout_below="@id/line_2"
+                android:layout_marginTop = "@dimen/_13sdp"
+                android:layout_centerHorizontal = "true"
+                android:gravity = "left">
+
+                <TextView
+                    android:id="@+id/text_6"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "@dimen/_13sdp"
+                    android:gravity = "center_vertical"
+                    android:textColor = "#2a2a2a"
+                    android:textSize = "@dimen/_10sdp"
+                    android:text="任职保证："/>
+
+                <EditText
+                    android:layout_width = "@dimen/_205sdp"
+                    android:layout_height = "@dimen/_13sdp"
+                    android:layout_toRightOf = "@+id/text_6"
+                    android:gravity = "center_vertical"
+                    android:textColor = "#2a2a2a"
+                    android:textSize = "@dimen/_10sdp"
+                    android:background = "@null"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/line_3"
+                android:layout_width = "fill_parent"
+                android:layout_height = "@dimen/_1sdp"
+                android:layout_marginTop = "@dimen/_11sdp"
+                android:layout_below = "@+id/chech_sq_6"
+                android:background = "#dddddd"
+                android:gravity = "left"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_be_business"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@drawable/shape_green_button"
+        android:text="提交"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/_15sdp"/>
+
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MemberSqActivity"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width = "fill_parent"
+        android:layout_height = "@dimen/_41sdp"
+        android:background = "#ffffff"
+        android:gravity = "left">
+
+    <RelativeLayout
+        android:id="@+id/ordersure_widget_2"
+        android:layout_width = "@dimen/_275sdp"
+        android:layout_height = "@dimen/_26sdp"
+        android:layout_marginTop = "@dimen/_7sdp"
+        android:layout_centerHorizontal = "true"
+        android:gravity = "left">
+
+        <ImageView
+            android:id="@+id/iv_title_back"
+            android:layout_width = "@dimen/_16sdp"
+            android:layout_height = "@dimen/_16sdp"
+            android:layout_marginTop = "@dimen/_6sdp"
+            android:src = "@drawable/arrowleftblack"
+            android:gravity = "left"/>
+
+        <TextView
+            android:layout_width = "@dimen/_60sdp"
+            android:layout_height = "@dimen/_26sdp"
+            android:layout_centerHorizontal = "true"
+            android:gravity = "center"
+            android:textColor = "#060606"
+            android:textSize = "@dimen/_11sdp"
+            android:text="成员申请"/>
+    </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/ordersure_widget_6"
+            android:layout_width = "@dimen/_300sdp"
+            android:layout_height = "@dimen/_1sdp"
+            android:layout_marginTop = "@dimen/_7sdp"
+            android:layout_below = "@+id/ordersure_widget_2"
+            android:background = "#dddddd"
+            android:gravity = "left"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rel_member"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

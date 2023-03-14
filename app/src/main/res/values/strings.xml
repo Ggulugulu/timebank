@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">时间银行</string>
+    <string-array name="home_list">
+        <item>全部志愿</item>
+        <item>推荐志愿</item>
+        <item>我的志愿</item>
+    </string-array>
+
+    <string-array name="duixiang">
+        <item>订单</item>
+        <item>审核人</item>
+    </string-array>
+
+    <string-array name="vol">
+        <item>照顾老人</item>
+        <item>照顾小孩</item>
+        <item>帮忙做事</item>
+    </string-array>
+
+    <string-array name="gongsi">
+        <item>服装配饰</item>
+        <item>美妆个护</item>
+        <item>餐饮食品</item>
+        <item>生活服务</item>
+        <item>旅游住宿</item>
+        <item>家用电器</item>
+    </string-array>
+</resources>

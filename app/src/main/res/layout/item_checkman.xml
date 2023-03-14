@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="#ffffff"
+    android:id="@+id/ll_checkman">
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/img_header"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/me_touxiang" />
+
+            <LinearLayout
+                android:layout_toRightOf="@id/img_header"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="11dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="用户名/id啥的"
+                    android:textColor="#242424"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_rongyu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:text="竞争的条件，荣誉时间"
+                    android:textColor="#FF5722"
+                    android:textSize="18sp" />
+                <!--                android:textColor="#9f9f9f"-->
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_vote"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:background="@drawable/shape_green_button"
+                android:text="投票"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:background="#f5f5f4" />
+
+
+</RelativeLayout>

@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gl_main_ordersure"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:id="@+id/ordersure_widget_1"
+        android:layout_width = "fill_parent"
+        android:layout_height = "@dimen/_41sdp"
+        android:background = "#ffffff"
+        android:gravity = "left">
+
+        <RelativeLayout
+            android:id="@+id/ordersure_widget_2"
+            android:layout_width = "@dimen/_275sdp"
+            android:layout_height = "@dimen/_26sdp"
+            android:layout_marginTop = "@dimen/_7sdp"
+            android:layout_centerHorizontal = "true"
+            android:gravity = "left">
+
+            <ImageView
+                android:id="@+id/iv_title_back"
+                android:layout_width = "@dimen/_16sdp"
+                android:layout_height = "@dimen/_16sdp"
+                android:layout_marginLeft = "@dimen/_0sdp"
+                android:layout_marginTop = "@dimen/_6sdp"
+                android:padding = "@dimen/_0sdp"
+                android:src = "@drawable/arrowleftblack"
+                android:gravity = "left"/>
+
+            <TextView
+                android:id="@+id/ordersure_widget_5"
+                android:layout_width = "@dimen/_60sdp"
+                android:layout_height = "@dimen/_26sdp"
+                android:layout_centerHorizontal = "true"
+                android:gravity = "center"
+                android:textColor = "#060606"
+                android:textSize = "@dimen/_11sdp"
+                android:text="订单确认"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ordersure_widget_6"
+            android:layout_width = "@dimen/_300sdp"
+            android:layout_height = "@dimen/_1sdp"
+            android:layout_marginTop = "@dimen/_7sdp"
+            android:layout_below = "@+id/ordersure_widget_2"
+            android:background = "#dddddd"
+            android:gravity = "left"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/ordersure_widget_7"
+        android:layout_width = "fill_parent"
+        android:layout_height = "fill_parent"
+        android:layout_below = "@+id/ordersure_widget_1"
+        android:background = "#f6f6f6"
+        android:gravity = "left"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:id="@+id/ordersure_widget_67"
+            android:layout_width = "fill_parent"
+            android:layout_height = "fill_parent"
+            android:background = "#f6f6f6"
+            android:gravity = "left">
+            <RelativeLayout
+                android:id="@+id/ordersure_widget_25"
+                android:layout_width = "fill_parent"
+                android:layout_height = "@dimen/_194sdp"
+                android:background = "#ffffff"
+                android:gravity = "left">
+
+                <EditText
+                    android:id="@+id/edit_site"
+                    android:layout_width = "@dimen/_277sdp"
+                    android:layout_height = "@dimen/_26sdp"
+                    android:layout_marginTop = "@dimen/_14sdp"
+                    android:layout_below = "@+id/ordersure_widget_23"
+                    android:padding = "@dimen/_0sdp"
+                    android:layout_centerHorizontal = "true"
+                    android:gravity = "center_vertical"
+                    android:textColor = "#2a2a2a"
+                    android:textSize = "@dimen/_10sdp"
+                    android:background = "@null"
+                    android:hint="为了商品更快抵达，请填写您的街道和门牌号（请勿重复填写省市区）"/>
+
+                <RelativeLayout
+                    android:id="@+id/ordersure_widget_12"
+                    android:layout_width = "fill_parent"
+                    android:layout_height = "@dimen/_1sdp"
+                    android:layout_marginTop = "@dimen/_11sdp"
+                    android:layout_below = "@+id/ordersure_widget_9"
+                    android:padding = "@dimen/_0sdp"
+                    android:background = "#dddddd"
+                    android:gravity = "left"/>
+
+                <RelativeLayout
+                    android:id="@+id/ordersure_widget_13"
+                    android:layout_width = "@dimen/_277sdp"
+                    android:layout_height = "@dimen/_13sdp"
+                    android:layout_marginTop = "@dimen/_13sdp"
+                    android:layout_below = "@+id/ordersure_widget_12"
+                    android:padding = "@dimen/_0sdp"
+                    android:layout_centerHorizontal = "true"
+                    android:gravity = "left">
+
+                    <EditText
+                        android:id="@+id/edit_phone"
+                        android:layout_width = "@dimen/_205sdp"
+                        android:layout_height = "@dimen/_13sdp"
+                        android:layout_marginLeft = "@dimen/_0sdp"
+                        android:layout_toRightOf = "@+id/ordersure_widget_14"
+                        android:layout_marginTop = "@dimen/_0sdp"
+                        android:padding = "@dimen/_0sdp"
+                        android:gravity = "center_vertical"
+                        android:textColor = "#2a2a2a"
+                        android:textSize = "@dimen/_10sdp"
+                        android:background = "@null"
+                        android:hint="请输入收货人手机号码"/>
+
+                    <TextView
+                        android:id="@+id/ordersure_widget_14"
+                        android:layout_width = "@dimen/_45sdp"
+                        android:layout_height = "@dimen/_13sdp"
+                        android:layout_marginLeft = "@dimen/_0sdp"
+                        android:layout_marginTop = "@dimen/_0sdp"
+                        android:padding = "@dimen/_0sdp"
+                        android:gravity = "center_vertical"
+                        android:textColor = "#2a2a2a"
+                        android:textSize = "@dimen/_10sdp"
+                        android:text="手机"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ordersure_widget_16"
+                    android:layout_width = "fill_parent"
+                    android:layout_height = "@dimen/_1sdp"
+                    android:layout_marginTop = "@dimen/_11sdp"
+                    android:layout_below = "@+id/ordersure_widget_13"
+                    android:padding = "@dimen/_0sdp"
+                    android:background = "#dddddd"
+                    android:gravity = "left"/>
+
+                <RelativeLayout
+                    android:id="@+id/ll_choosesite"
+                    android:layout_width = "@dimen/_277sdp"
+                    android:layout_height = "@dimen/_13sdp"
+                    android:layout_marginTop = "@dimen/_13sdp"
+                    android:layout_below = "@+id/ordersure_widget_16"
+                    android:layout_centerHorizontal = "true"
+                    android:orientation="horizontal"
+                    android:gravity = "left">
+
+                    <TextView
+                        android:id="@+id/ordersure_widget_18"
+                        android:layout_width = "@dimen/_61sdp"
+                        android:layout_height = "@dimen/_13sdp"
+                        android:gravity = "center_vertical"
+                        android:textColor = "#2a2a2a"
+                        android:textSize = "@dimen/_10sdp"
+                        android:text="所在区域"/>
+
+                    <TextView
+                        android:id="@+id/tv_shopping_place"
+                        android:layout_toRightOf="@id/ordersure_widget_18"
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "@dimen/_13sdp"
+                        android:gravity = "center"
+                        android:textColor = "#2a2a2a"
+                        android:textSize = "@dimen/_10sdp"
+                        android:hint="浙江省杭州市萧山区"/>
+
+                    <ImageView
+                        android:id="@+id/iv_shopping_place"
+                        android:layout_alignParentRight="true"
+                        android:layout_width = "@dimen/_13sdp"
+                        android:layout_height = "@dimen/_13sdp"
+                        android:src = "@drawable/ordersure_22_22" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ordersure_widget_20"
+                    android:layout_width = "fill_parent"
+                    android:layout_height = "@dimen/_1sdp"
+                    android:layout_marginTop = "@dimen/_12sdp"
+                    android:layout_below = "@+id/ll_choosesite"
+                    android:padding = "@dimen/_0sdp"
+                    android:background = "#dddddd"
+                    android:gravity = "left"/>
+
+                <RelativeLayout
+                    android:id="@+id/ordersure_widget_9"
+                    android:layout_width = "@dimen/_277sdp"
+                    android:layout_height = "@dimen/_13sdp"
+                    android:layout_marginTop = "@dimen/_11sdp"
+                    android:padding = "@dimen/_0sdp"
+                    android:layout_centerHorizontal = "true"
+                    android:gravity = "left">
+
+                    <EditText
+                        android:id="@+id/edit_name"
+                        android:layout_width = "@dimen/_205sdp"
+                        android:layout_height = "@dimen/_13sdp"
+                        android:layout_marginLeft = "@dimen/_0sdp"
+                        android:layout_toRightOf = "@+id/ordersure_widget_10"
+                        android:layout_marginTop = "@dimen/_0sdp"
+                        android:padding = "@dimen/_0sdp"
+                        android:gravity = "center_vertical"
+                        android:textColor = "#2a2a2a"
+                        android:textSize = "@dimen/_10sdp"
+                        android:background = "@null"
+                        android:hint="请输入收货人姓名"/>
+
+                    <TextView
+                        android:id="@+id/ordersure_widget_10"
+                        android:layout_width = "@dimen/_45sdp"
+                        android:layout_height = "@dimen/_13sdp"
+                        android:layout_marginLeft = "@dimen/_0sdp"
+                        android:layout_marginTop = "@dimen/_0sdp"
+                        android:padding = "@dimen/_0sdp"
+                        android:gravity = "center_vertical"
+                        android:textColor = "#2a2a2a"
+                        android:textSize = "@dimen/_10sdp"
+                        android:text="收货人"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/ordersure_widget_23"
+                    android:layout_width = "@dimen/_277sdp"
+                    android:layout_height = "@dimen/_13sdp"
+                    android:layout_marginTop = "@dimen/_13sdp"
+                    android:layout_below = "@+id/ordersure_widget_20"
+                    android:padding = "@dimen/_0sdp"
+                    android:layout_centerHorizontal = "true"
+                    android:gravity = "center_vertical"
+                    android:textColor = "#2a2a2a"
+                    android:textSize = "@dimen/_10sdp"
+                    android:text="详细地址"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ordersure_widget_59"
+                android:layout_width = "fill_parent"
+                android:layout_height = "@dimen/_61sdp"
+                android:layout_marginTop = "@dimen/_3sdp"
+                android:padding = "@dimen/_0sdp"
+                android:background = "#ffffff"
+                android:gravity = "center_horizontal"
+                android:layout_below="@+id/ordersure_widget_25">
+
+                <EditText
+                    android:id="@+id/edit_remark"
+                    android:layout_width = "@dimen/_276sdp"
+                    android:layout_height = "@dimen/_26sdp"
+                    android:layout_marginTop = "@dimen/_5sdp"
+                    android:layout_below = "@+id/ordersure_widget_60"
+                    android:padding = "@dimen/_0sdp"
+                    android:layout_centerHorizontal = "true"
+                    android:gravity = "center_vertical"
+                    android:textColor = "#2a2a2a"
+                    android:textSize = "@dimen/_10sdp"
+                    android:background = "@null"/>
+
+                <TextView
+                    android:id="@+id/ordersure_widget_60"
+                    android:layout_width = "@dimen/_276sdp"
+                    android:layout_height = "@dimen/_13sdp"
+                    android:layout_marginTop = "@dimen/_13sdp"
+                    android:padding = "@dimen/_0sdp"
+                    android:layout_centerHorizontal = "true"
+                    android:gravity = "center_vertical"
+                    android:textColor = "#2a2a2a"
+                    android:textSize = "@dimen/_10sdp"
+                    android:text="备注"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ordersure_widget_62"
+                android:layout_width = "fill_parent"
+                android:layout_height = "@dimen/_35sdp"
+                android:layout_marginTop = "@dimen/_1sdp"
+                android:layout_below = "@+id/ordersure_widget_59"
+                android:padding = "@dimen/_0sdp"
+                android:background = "#ffffff"
+                android:gravity = "left"
+                android:layout_alignParentBottom="true">
+
+                <RelativeLayout
+                    android:id="@+id/ordersure_widget_64"
+                    android:layout_width = "@dimen/_192sdp"
+                    android:layout_height = "@dimen/_14sdp"
+                    android:padding = "@dimen/_0sdp"
+                    android:layout_centerVertical = "true"
+                    android:gravity = "left">
+
+                    <TextView
+                        android:id="@+id/ordersure_widget_65"
+                        android:layout_width = "@dimen/_34sdp"
+                        android:layout_height = "@dimen/_14sdp"
+                        android:layout_marginLeft = "@dimen/_107sdp"
+                        android:layout_marginTop = "@dimen/_0sdp"
+                        android:padding = "@dimen/_0sdp"
+                        android:gravity = "right|center_vertical"
+                        android:textColor = "#2a2a2a"
+                        android:textSize = "@dimen/_10sdp"
+                        android:text="应付："/>
+
+                    <TextView
+                        android:id="@+id/tv_cost"
+                        android:layout_width = "@dimen/_49sdp"
+                        android:layout_height = "@dimen/_14sdp"
+                        android:layout_marginLeft = "@dimen/_2sdp"
+                        android:layout_toRightOf = "@+id/ordersure_widget_65"
+                        android:gravity = "center_vertical"
+                        android:textColor = "#fb3d3a"
+                        android:textSize = "@dimen/_10sdp"
+                        android:text="¥99.00"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/text_submit"
+                    android:layout_width = "@dimen/_107sdp"
+                    android:layout_height = "@dimen/_35sdp"
+                    android:background = "#e7e9e7"
+                    android:layout_alignParentRight = "true"
+                    android:gravity = "center"
+                    android:textColor = "#979997"
+                    android:textSize = "@dimen/_10sdp"
+                    android:text="请完善地址"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

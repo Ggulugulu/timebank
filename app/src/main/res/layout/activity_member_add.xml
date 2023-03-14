@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".activity.MemberAddActivity">
+    <RelativeLayout
+        android:id="@+id/a_1"
+        android:layout_width = "fill_parent"
+        android:layout_height = "@dimen/_41sdp"
+        android:padding = "@dimen/_0sdp"
+        android:background = "#ffffff"
+        android:gravity = "left">
+
+        <RelativeLayout
+            android:id="@+id/accountmanagement_widget_3"
+            android:layout_width = "@dimen/_275sdp"
+            android:layout_height = "@dimen/_28sdp"
+            android:layout_marginTop = "@dimen/_6sdp"
+            android:layout_centerHorizontal = "true">
+
+            <ImageView
+                android:id="@+id/iv_title_back"
+                android:layout_width = "@dimen/_16sdp"
+                android:layout_height = "@dimen/_16sdp"
+                android:src = "@drawable/arrowleftblack"
+                android:layout_centerVertical = "true"
+                android:layout_alignParentLeft = "true"
+                android:gravity = "left"/>
+
+            <TextView
+                android:layout_toRightOf="@id/iv_title_back"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_width = "wrap_content"
+                android:layout_height = "@dimen/_28sdp"
+                android:layout_centerHorizontal = "true"
+                android:gravity = "center"
+                android:textColor = "#0b0f0b"
+                android:textSize = "@dimen/_11sdp"
+                android:text="添加家庭成员"/>
+            <TextView
+                android:id="@+id/add_send"
+                android:layout_alignParentRight="true"
+                android:layout_width = "wrap_content"
+                android:layout_height = "@dimen/_28sdp"
+                android:layout_centerHorizontal = "true"
+                android:gravity = "center"
+                android:textColor = "@color/gray_8d"
+                android:textStyle="bold"
+                android:textSize = "@dimen/_11sdp"
+                android:text="添加"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width = "fill_parent"
+            android:layout_height = "@dimen/_1sdp"
+            android:layout_marginTop = "@dimen/_6sdp"
+            android:layout_below = "@+id/accountmanagement_widget_3"
+            android:background = "#e4e5e4"
+            android:gravity = "left"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ordersure_widget_25"
+        android:layout_width = "fill_parent"
+        android:layout_height = "@dimen/_194sdp"
+        android:background = "#ffffff"
+        android:gravity = "left">
+
+        <RelativeLayout
+            android:id="@+id/ordersure_widget_9"
+            android:layout_width = "@dimen/_277sdp"
+            android:layout_height = "@dimen/_13sdp"
+            android:layout_marginTop = "@dimen/_11sdp"
+            android:layout_centerHorizontal = "true"
+            android:gravity = "left">
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width = "@dimen/_205sdp"
+                android:layout_height = "@dimen/_13sdp"
+                android:layout_marginLeft = "@dimen/_0sdp"
+                android:layout_toRightOf = "@+id/ordersure_widget_10"
+                android:layout_marginTop = "@dimen/_0sdp"
+                android:padding = "@dimen/_0sdp"
+                android:gravity = "center_vertical"
+                android:textColor = "#2a2a2a"
+                android:textSize = "@dimen/_10sdp"
+                android:background = "@null"
+                android:hint="请输入成员姓名"/>
+
+            <TextView
+                android:id="@+id/ordersure_widget_10"
+                android:layout_width = "@dimen/_45sdp"
+                android:layout_height = "@dimen/_13sdp"
+                android:layout_marginLeft = "@dimen/_0sdp"
+                android:layout_marginTop = "@dimen/_0sdp"
+                android:padding = "@dimen/_0sdp"
+                android:gravity = "center_vertical"
+                android:textColor = "#2a2a2a"
+                android:textSize = "@dimen/_10sdp"
+                android:text="成员"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/ordersure_widget_12"
+            android:layout_width = "fill_parent"
+            android:layout_height = "@dimen/_1sdp"
+            android:layout_marginTop = "@dimen/_11sdp"
+            android:layout_below = "@+id/ordersure_widget_9"
+            android:padding = "@dimen/_0sdp"
+            android:background = "#dddddd"
+            android:gravity = "left"/>
+
+        <RelativeLayout
+            android:id="@+id/ordersure_widget_13"
+            android:layout_width = "@dimen/_277sdp"
+            android:layout_height = "@dimen/_13sdp"
+            android:layout_marginTop = "@dimen/_13sdp"
+            android:layout_below = "@+id/ordersure_widget_12"
+            android:layout_centerHorizontal = "true"
+            android:gravity = "left">
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width = "@dimen/_205sdp"
+                android:layout_height = "@dimen/_13sdp"
+                android:layout_marginLeft = "@dimen/_0sdp"
+                android:layout_toRightOf = "@+id/ordersure_widget_14"
+                android:layout_marginTop = "@dimen/_0sdp"
+                android:padding = "@dimen/_0sdp"
+                android:gravity = "center_vertical"
+                android:textColor = "#2a2a2a"
+                android:textSize = "@dimen/_10sdp"
+                android:background = "@null"
+                android:hint="请输入收货人手机号码"/>
+
+            <TextView
+                android:id="@+id/ordersure_widget_14"
+                android:layout_width = "@dimen/_45sdp"
+                android:layout_height = "@dimen/_13sdp"
+                android:layout_marginLeft = "@dimen/_0sdp"
+                android:layout_marginTop = "@dimen/_0sdp"
+                android:padding = "@dimen/_0sdp"
+                android:gravity = "center_vertical"
+                android:textColor = "#2a2a2a"
+                android:textSize = "@dimen/_10sdp"
+                android:text="手机"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/ordersure_widget_16"
+            android:layout_width = "fill_parent"
+            android:layout_height = "@dimen/_1sdp"
+            android:layout_marginTop = "@dimen/_11sdp"
+            android:layout_below = "@+id/ordersure_widget_13"
+            android:background = "#dddddd"
+            android:gravity = "left"/>
+        <RelativeLayout
+            android:id="@+id/ordersure_widget_17"
+            android:layout_width = "@dimen/_277sdp"
+            android:layout_height = "@dimen/_13sdp"
+            android:layout_marginTop = "@dimen/_13sdp"
+            android:layout_below = "@+id/ordersure_widget_16"
+            android:layout_centerHorizontal = "true"
+            android:gravity = "left">
+
+            <EditText
+                android:id="@+id/et_guanxi"
+                android:layout_width = "@dimen/_205sdp"
+                android:layout_height = "@dimen/_13sdp"
+                android:layout_marginLeft = "@dimen/_0sdp"
+                android:layout_toRightOf = "@+id/ordersure_widget_18"
+                android:layout_marginTop = "@dimen/_0sdp"
+                android:padding = "@dimen/_0sdp"
+                android:gravity = "center_vertical"
+                android:textColor = "#2a2a2a"
+                android:textSize = "@dimen/_10sdp"
+                android:background = "@null"
+                android:hint="请输入成员关系"/>
+
+            <TextView
+                android:id="@+id/ordersure_widget_18"
+                android:layout_width = "@dimen/_45sdp"
+                android:layout_height = "@dimen/_13sdp"
+                android:layout_marginLeft = "@dimen/_0sdp"
+                android:layout_marginTop = "@dimen/_0sdp"
+                android:padding = "@dimen/_0sdp"
+                android:gravity = "center_vertical"
+                android:textColor = "#2a2a2a"
+                android:textSize = "@dimen/_10sdp"
+                android:text="关系"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/ordersure_widget_21"
+            android:layout_width = "fill_parent"
+            android:layout_height = "@dimen/_1sdp"
+            android:layout_marginTop = "@dimen/_12sdp"
+            android:layout_below = "@+id/ordersure_widget_17"
+            android:background = "#dddddd"
+            android:gravity = "left"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

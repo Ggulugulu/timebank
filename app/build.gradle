@@ -1,0 +1,100 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.1'
+
+    signingConfigs{
+        config{
+            keyAlias'keytimebank'
+            keyPassword'timebank'
+            storePassword'timebank'
+            storeFile file('D:\\AndroidStudiojks\\timebank.jks')
+
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    defaultConfig {
+        applicationId "com.example.test"
+        minSdkVersion 22
+        //noinspection ExpiredTargetSdkVersion
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        ndk {
+            // 设置支持的SO库架构（开发者可以根据需要，选择一个或多个平台的so）
+            abiFilters "armeabi", "arm64-v8a",'x86'
+        }
+        javaCompileOptions {
+            // 显式声明支持注解
+            annotationProcessorOptions {
+                includeCompileClasspath true
+            }
+        }
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        def requested = details.requested
+        if (requested.group == 'com.android.support') {
+            if (!requested.name.startsWith("multidex")) {
+                details.useVersion '26.0.0-alpha1'
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support.constraint:constraint-layout:2.0.1'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.zhy:okhttputils:2.6.2'
+    implementation 'com.android.support:appcompat-v7:+'
+    implementation 'com.alibaba:fastjson:1.1.72.android'
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation 'com.contrarywind:Android-PickerView:4.1.9'
+    implementation 'com.android.support:support-v4:26.0.0-alpha1'
+    androidTestImplementation 'junit:junit:4.12'
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    implementation 'com.android.support:recyclerview-v7:'
+    implementation 'com.github.YangsBryant:TeaScreenPopupWindow:1.0.4'
+    implementation 'com.jakewharton:butterknife:5.1.1'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.daimajia.slider:library:1.1.5@aar'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.nineoldandroids:library:2.4.0'
+    compile 'com.hedgehog.ratingbar:app:1.1.2'
+    implementation 'com.intuit.sdp:sdp-android:1.0.3'
+    implementation 'com.recker.flybanner:flybanner:1.3'
+    compile 'cn.bingoogolapple:bga-progressbar:1.0.0@aar'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.github.dongjunkun:DropDownMenu:1.0.4'
+    compile 'com.jph.takephoto:takephoto_library:4.0.3'
+
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.squareup.retrofit2:retrofit:2.0.0-beta4'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.0-beta4'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.0-beta4'
+    compile 'io.reactivex:rxandroid:1.1.0'
+    compile 'io.reactivex:rxjava:1.1.0'
+
+    //zxing二维码
+    compile 'cn.yipianfengye.android:zxing-library:2.1'
+
+}
+
+

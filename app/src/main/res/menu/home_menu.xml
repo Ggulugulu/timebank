@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/get_vol"
+        android:title="志愿活动申请"/>
+    <item
+        android:id="@+id/get_check"
+        android:title="审核人申请"/>
+    <item
+        android:id="@+id/get_check_vote"
+        android:title="审核人投票"/>
+    <item
+        android:id="@+id/get_complain"
+        android:title="投诉/举报"/>
+</menu>
